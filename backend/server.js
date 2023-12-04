@@ -75,25 +75,25 @@ app.post('/connect', (req, res) => {
     })
 })
 
-// SEARCH GAME
-app.get('/games/title/:title', (req, res) => {
-    let gameTitle = req.params.title;
-    let qr = `slect * from games where title = ?`;
+// SEARCH GAMES
+app.get("/trip/games/title/:title", (req, res) => {
+  let gameTitle = req.params.title;
+  let qr = `SELECT * FROM games WHERE title = ?`;
 
-    db.query(qr, [gameTitle], (error, result) => {
-        if (error) {
-          console.log(error);
-          res.status(500).send({ message: "Internal server error" });
-        }
-        if (result.length > 0) {
-          res.send({
-            message: "get game success",
-            data: result,
-          });
-        } else {
-          res.send({
-            message: "get game error",
-          });
-        }
-    })
-})
+  db.query(qr, [gameTitle], (error, result) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send({ message: "Internal server error" });
+    }
+    if (result.length > 0) {
+      res.send({
+        message: "get game success",
+        data: result,
+      });
+    } else {
+      res.send({
+        message: "get game error",
+      });
+    }
+  });
+});

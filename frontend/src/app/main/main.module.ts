@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ShowComponent } from './show/show.component';
 import { LoginComponent } from './login/login.component';
@@ -22,6 +24,8 @@ const routesPages : Routes = [
   imports: [
     FormsModule,
     CommonModule,
+    HttpClientModule,
+    NgbCarouselModule,
     ReactiveFormsModule,
     RouterModule.forChild(routesPages)
   ]

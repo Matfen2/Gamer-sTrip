@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+.containerShow .navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: black;
+}
+.containerShow .navbar .navbar-brand .img-fluid {
+  height: 180px;
+  max-width: 1200px;
+  margin-left: -60px;
+}
+.containerShow .navbar #btnConnect {
+  border: none;
+  margin-right: 15px;
+  background: transparent;
+}
+.containerShow .navbar #btnConnect .fa-solid {
+  color: azure;
+  cursor: pointer;
+  font-size: 1.6em;
+}
+.containerShow .navbar #btnConnect .fa-solid:hover {
+  opacity: 0.8;
+}
+.containerShow .gamesMoments {
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/pict/SteamBackground.jpeg");
+}
+.containerShow .gamesMoments .containGames .best {
+  font-size: 1.6em;
+  color: azure;
+  text-align: center;
+}
+.containerShow .gamesMoments .containGames .listGames {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: 500px;
+  max-width: 1400px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-4 .img-fluid {
+  height: 450px;
+  max-width: 650px;
+}
+.containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .present .title {
+  color: azure;
+  font-size: 2em;
+  text-align: center;
+}
+.containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .listCategory {
+  text-align: center;
+}
+.containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .listCategory #first, .containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .listCategory #second, .containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .listCategory #third {
+  margin: 10px;
+  padding: 7px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid azure;
+}
+.containerShow .gamesMoments .containGames .listGames .picsum-img-wrapper .row .col-lg-8 .story {
+  margin-top: 5px;
+  font-size: 1.4em;
+  color: azure;
+  height: 250px;
+}/*# sourceMappingURL=styles.css.map */

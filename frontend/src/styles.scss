@@ -1,0 +1,90 @@
+.containerShow{
+    .navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: black;
+        .navbar-brand {
+            .img-fluid {
+                height: 180px;
+                max-width: 1200px;
+                margin-left: -60px;
+            }
+        }
+        #btnConnect {
+            border: none;
+            margin-right: 15px;
+            background: transparent;
+            .fa-solid {
+                color: azure;
+                cursor: pointer;
+                font-size: 1.6em;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .gamesMoments {
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/assets/pict/SteamBackground.jpeg');
+        .containGames {
+            .best {
+              font-size: 1.6em;
+              color: azure;
+              text-align: center;
+            }
+            .listGames {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                height: 500px;
+                max-width: 1400px;
+                padding: 30px;
+                border-radius: 20px;
+                border: 1px solid black;
+                .picsum-img-wrapper {
+                    .row {
+                        .col-lg-4 {
+                            .img-fluid {
+                                height: 450px;
+                                max-width: 650px;
+                            }
+                        }
+                        .col-lg-8 {
+                            .present {
+                                .title {
+                                    color: azure;
+                                    font-size: 2.0em;
+                                    text-align: center;
+                                }
+                            }
+                            .listCategory {
+                                text-align: center;
+                                #first, #second, #third {
+                                    margin: 10px;
+                                    padding: 7px;
+                                    font-weight: bold;
+                                    background-color: transparent;
+                                    border: 2px solid azure;
+                                }
+                            }
+                            .story {
+                                margin-top: 5px;
+                                font-size: 1.4em;
+                                color: azure;
+                                height: 250px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
